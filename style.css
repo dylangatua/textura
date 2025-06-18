@@ -761,14 +761,6 @@ section {
     padding: 0.5rem 1rem;
   }
 
-  #about,
-  #products,
-  #events,
-  #team,
-  #contact {
-    padding-left: 0px;
-  }
-
   section,
   #home,
   #about,
