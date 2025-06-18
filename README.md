@@ -17,6 +17,6 @@ For any pressing questions, concerns, or errors, please direct inquiries to [Dyl
 
 - **`script.js`**  
   This JavaScript file enables user interaction with the website. It is used to generate dynamic content, enhance the user interface, and handle user input.
-- ** `\images` **
+- **`\images`**
   This directory lists all images and visual content used in the webpage. All files have the same name as listed on the [Figma design](https://www.figma.com/design/aTM0TJEufN5BCYkxoLt4bD/Textura-Website?node-id=85-157&m=dev).
 
