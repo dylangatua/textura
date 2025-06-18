@@ -749,27 +749,27 @@ section {
     width: 100%;
     left: 0;
     transform: none;
-    height: 50px;
+    height: 20px;
     padding: 0 1rem;
   }
 
   .nav-container {
     padding-top: 0;
-    height: 50px;
+    height: 20px;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
   }
 
   .nav-links {
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     padding-right: 0;
     width: 100%;
   }
 
   .logo {
-    width: 120px;
+    width: 90px;
     height: auto;
     margin-bottom: 0;
   }
