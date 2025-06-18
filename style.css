@@ -750,7 +750,8 @@ section {
   #events,
   #team,
   #contact {
-    padding-left: 79px;
+    padding-left: 79px !important;
+    padding-right: 1rem;
   }
 }
 
@@ -766,6 +767,22 @@ section {
   #team,
   #contact {
     padding-left: 0px;
+  }
+
+  section,
+  #home,
+  #about,
+  #products,
+  #events,
+  #team,
+  #contact {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    text-align: center;
   }
 
   .nav-container {
@@ -798,7 +815,7 @@ section {
     position: relative;
     top: auto;
     left: auto;
-    width: 100px;
+    width: 75px;
     height: auto;
     margin: 0;
   }
