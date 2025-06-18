@@ -1,7 +1,8 @@
 # Textura
 
-***Empowering Black Hair Care Through Innovation.***  
-_Celebrate Your Texture. Embrace Your Identity._
+***Empowering Black Hair Care Through Innovation. Celebrate Your Texture. Embrace Your Identity.***
+
+---
 
 This is the official Textura website.  
 For any pressing questions, concerns, or errors, please direct inquiries to [Dylan Gatua](mailto:dylangatua@gmail.com).
@@ -16,3 +17,6 @@ For any pressing questions, concerns, or errors, please direct inquiries to [Dyl
 
 - **`script.js`**  
   This JavaScript file enables user interaction with the website. It is used to generate dynamic content, enhance the user interface, and handle user input.
+- ** `\images` **
+  This directory lists all images and visual content used in the webpage. All files have the same name as listed on the [Figma design](https://www.figma.com/design/aTM0TJEufN5BCYkxoLt4bD/Textura-Website?node-id=85-157&m=dev).
+
