@@ -6,22 +6,24 @@
 
 html {
   scroll-behavior: smooth;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   background-color: #F5F5F5;
 }
 
 nav {
   position: fixed;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 1440px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  left: 0;
+  transform: none;
   height: 95px;
   flex-shrink: 0;
 
@@ -278,7 +280,10 @@ section {
   font-weight: 400;
   line-height: normal;
   margin-top: 20px;
-  width: 1282px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -345,7 +350,10 @@ section {
   font-weight: 400;
   line-height: normal;
   margin-top: 20px;
-  width: 1282px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
   padding-bottom: 33px;
   margin-bottom: 0;
 }
@@ -371,7 +379,10 @@ section {
   font-weight: 400;
   line-height: normal;
   margin-top: 28px;
-  width: 1286px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
   padding-bottom: 43px;
   margin-bottom: 0;
 }
@@ -383,7 +394,7 @@ section {
 
 .card-stack {
   position: relative;
-  width: 412.097px;
+  width: clamp(280px, 90%, 412px);
   height: 511px;
   flex-shrink: 0;
 }
@@ -401,7 +412,7 @@ section {
 }
 
 .background-card {
-  width: 412.097px;
+  width: clamp(280px, 90%, 412.097);
   height: 490px;
   flex-shrink: 0;
   background-color: #E6E6E6;
@@ -501,7 +512,10 @@ section {
   display: flex;
   justify-content: left;
   gap: 20px;
-  max-width: 1282px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .action-text-row p {
@@ -527,7 +541,10 @@ section {
   display: flex;
   justify-content: left;
   padding-bottom: 10px;
-  max-width: 1282px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .all-icons-row {
@@ -538,7 +555,10 @@ section {
   padding-left: 49px;
   padding-bottom: 25px;
   gap: 36px;
-  max-width: 1282px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .all-img {
@@ -555,7 +575,10 @@ section {
   padding-left: 48px;
   padding-bottom: 25px;
   gap: 35px;
-  max-width: 1282px;
+  max-width: 100%;
+  width: 100%;
+  padding: 0 1rem;
+  box-sizing: border-box;
 }
 
 .all-description-box{
@@ -681,7 +704,7 @@ section {
 #about {
   background: #F5F5F5;
   text-align: left;
-  padding-left: 79px;
+  /* padding-left: 79px; */
   justify-content: center;
   margin: 0; 
   padding-bottom: 0;
@@ -690,7 +713,7 @@ section {
 #products {
   background: #F5F5F5;
   text-align: left;
-  padding-left: 79px;
+  /* padding-left: 79px; */
   padding-bottom: 0;
   justify-content: center;
 }
@@ -698,13 +721,13 @@ section {
 #events {
   background: #F5F5F5;
   text-align: left;
-  padding-left: 79px;
+  /* padding-left: 79px; */
 }
 
 #team {
   background: #F5F5F5;
   text-align: left;
-  padding-left: 79px;
+  /* padding-left: 79px; */
 }
 
 #contact {
@@ -789,6 +812,17 @@ section {
     gap: 1.5rem;
   }
 
+  .card-stack-row,
+  .all-icons-row,
+  .all-description-row,
+  .action-icons-row {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem;
+  }
+
   .background-card,
   .all-description-box,
   .all-img,
@@ -799,15 +833,6 @@ section {
 
   .action-text-row p {
     font-size: 1.2rem;
-  }
-
-  #about,
-  #products,
-  #events,
-  #team,
-  #contact {
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   .product-img-row {
