@@ -749,14 +749,16 @@ section {
     width: 100%;
     left: 0;
     transform: none;
-    height: auto;
-    padding: 1rem;
+    height: 50px;
+    padding: 0 1rem;
   }
 
   .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
     padding-top: 0;
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .nav-links {
@@ -767,9 +769,9 @@ section {
   }
 
   .logo {
-    position: static;
-    width: 150px;
-    margin-bottom: 1rem;
+    width: 120px;
+    height: auto;
+    margin-bottom: 0;
   }
 
   .hydropick-title {
