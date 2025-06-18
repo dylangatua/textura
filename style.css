@@ -733,7 +733,7 @@ section {
 #contact {
   background: #F5F5F5;
   text-align: left;
-  padding-left: 79px;
+  /* padding-left: 79px; */
 }
 
 #about,
@@ -744,12 +744,7 @@ section {
   scroll-margin-top: 95px;
 }
 
-@media (max-width: 768px) {
-  nav {
-    height: auto;
-    padding: 0.75rem 1rem;
-  }
-
+@media (min-width: 769px) {
   #about,
   #products,
   #events,
@@ -757,10 +752,25 @@ section {
   #contact {
     padding-left: 79px;
   }
+}
+
+@media (max-width: 768px) {
+  nav {
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  #about,
+  #products,
+  #events,
+  #team,
+  #contact {
+    padding-left: 0px;
+  }
 
   .nav-container {
     flex-direction: row;
-    align-items: center;
+    align-items: left;
     justify-content: space-between;
     height: auto;
     padding-top: 0;
@@ -781,6 +791,7 @@ section {
     font-size: 14px;
     height: auto;
     width: auto;
+    line-height: 1.4;
   }
 
   .logo {
