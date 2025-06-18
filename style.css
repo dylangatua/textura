@@ -746,32 +746,50 @@ section {
 
 @media (max-width: 768px) {
   nav {
-    width: 100%;
-    left: 0;
-    transform: none;
-    height: 20px;
-    padding: 0 1rem;
+    height: auto;
+    padding: 0.75rem 1rem;
+  }
+
+  #about,
+  #products,
+  #events,
+  #team,
+  #contact {
+    padding-left: 79px;
   }
 
   .nav-container {
-    padding-top: 0;
-    height: 20px;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
+    height: auto;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   .nav-links {
+    display: flex;
     flex-direction: row;
-    gap: 1rem;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     padding-right: 0;
-    width: 100%;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+    height: auto;
+    width: auto;
   }
 
   .logo {
-    width: 90px;
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 100px;
     height: auto;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   .hydropick-title {
