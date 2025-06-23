@@ -820,7 +820,7 @@ section {
   }
 
   .hydropick-subheader {
-    font-size: 1.2rem;
+    font-size: clamp(0.7rem, 3vw, 1.6rem);
     padding-top: 1.5rem;
   }
 
