@@ -780,7 +780,7 @@ section {
   .nav-container {
     flex-direction: row;
     align-items: left;
-    justify-content: flex-start;
+    justify-content: space-between;
     height: auto;
     padding-top: 0;
     padding-bottom: 0;
