@@ -1036,7 +1036,7 @@ section {
   }
 
    .all-description-box b {
-    font-size: clamp(14px, 80% ,19.544px);
+    font-size: clamp(12.5px, 80% ,19.544px);
    }
 
 
