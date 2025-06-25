@@ -1,3 +1,14 @@
+window.addEventListener('resize', ()  => {
+  const teamLink = document.querySelector('.nav-links li a[href="#team"]');
+    if (!teamLink) return;
+
+    if (window.innerWidth <= 768) {
+      teamLink.textContent = "Team";
+    } else {
+      teamLink.textContent = "Meet the Team";
+    }
+});
+
 window.addEventListener('scroll', () => {
   const homeSection = document.getElementById('home');
   const navLinks = document.querySelectorAll('.nav-links li a');

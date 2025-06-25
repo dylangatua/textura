@@ -633,8 +633,7 @@ section {
 .all-description-box p {
   color: var(--Another-Textura-Purple, #2F2152);
   font-family: Barlow;
-  font-size: clamp(15px, 80% ,19.544px);
-  /* font-size: 19.544px; */
+  font-size: 19.544px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -647,8 +646,7 @@ section {
 .all-description-box b {
   color: var(--Another-Textura-Purple, #2F2152);
   font-family: Barlow;
-  font-size: clamp(14px, 50% ,19.544px);
-  /* font-size: 19.544px; */
+  font-size: 19.544px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -914,23 +912,15 @@ section {
     padding: 1rem;
   }
 
+  .background-card{
+    margin: 0 auto !important;
+    padding: 0 !important;
+  }
 
-
-  /* .product-card {
-    position: absolute;
-    bottom: 30px;
-    left: 12.61px;
-    right: 11.64px;
-    height: calc(100% - 110.54px - 12.61px);
-    background-color: #F2F2F2;
-    box-shadow: none;
-    flex-shrink: 0;
-    aspect-ratio: 387.86/387.86;
-    border-radius: 19.393px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    text-align: center;
-    aspect-ratio: 1 / 1;
-  } */
+  .product-card{
+    position: relative;
+    margin-top: 15px;
+  }
 
   .card-stack-row,
   .action-text-row,
@@ -997,6 +987,8 @@ section {
 
   .product-subtitle {
     font-size: clamp(1rem, 4vw, 1.3rem);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   .card-text p {
@@ -1036,6 +1028,15 @@ section {
     width: 100%;
     padding: 0;
   }
+
+  .all-description-box p {
+    font-size: clamp(14px, 80% ,19.544px);
+  }
+
+   .all-description-box b {
+    font-size: clamp(10px, 50% ,19.544px);
+   }
+
 
   .contact-icons-row img,
   .stacked-icon {
