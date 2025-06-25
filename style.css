@@ -637,9 +637,9 @@ section {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
   width: 350px;
 }
 
@@ -915,11 +915,13 @@ section {
   .background-card{
     margin: 0 auto !important;
     padding: 0 !important;
+    height: auto;
   }
 
   .product-card{
     position: relative;
     margin-top: 15px;
+    margin-bottom: 24px;
   }
 
   .card-stack-row,
