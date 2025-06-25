@@ -361,14 +361,16 @@ section {
 .contact-title {
   overflow: hidden;
   color: var(--Another-Textura-Purple, #2F2152);
-  text-overflow: ellipsis;
-  white-space: nowrap;
   font-family: "Barlow Condensed";
   font-size: 64px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   padding-top: 60px;
+  white-space: normal;
+  overflow-wrap: normal;
+  word-break: normal;
+  text-align: left;
 }
 
 .contact-textura p {
@@ -412,7 +414,7 @@ section {
 
 .background-card {
   width: clamp(280px, 90%, 412.097);
-  height: 490px;
+  height: clamp(334px ,100%, 490px);
   flex-shrink: 0;
   background-color: #E6E6E6;
   border-radius: 29.089px;
@@ -448,7 +450,7 @@ section {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   padding-left: 17px;
 }
 
@@ -457,7 +459,9 @@ section {
   bottom: 12.61px;
   left: 12.61px;
   right: 11.64px;
-  height: calc(100% - 110.54px - 12.61px);
+  width: clamp(270px, 95%, 395px);
+  height: clamp (250.76 ,70%,366.85px);
+  margin-bottom: 10px;
   background-color: #F2F2F2;
   box-shadow: none;
   flex-shrink: 0;
@@ -629,7 +633,8 @@ section {
 .all-description-box p {
   color: var(--Another-Textura-Purple, #2F2152);
   font-family: Barlow;
-  font-size: 19.544px;
+  font-size: clamp(15px, 80% ,19.544px);
+  /* font-size: 19.544px; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -642,7 +647,8 @@ section {
 .all-description-box b {
   color: var(--Another-Textura-Purple, #2F2152);
   font-family: Barlow;
-  font-size: 19.544px;
+  font-size: clamp(14px, 50% ,19.544px);
+  /* font-size: 19.544px; */
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -853,7 +859,7 @@ section {
   }
 
   .nav-links li a {
-    font-size: 16px;
+    font-size: 12px;
     height: auto;
     width: auto;
     line-height: 1.4;
@@ -863,7 +869,7 @@ section {
     position: relative;
     top: auto;
     left: auto;
-    width: 150px;
+    width: 100px;
     height: auto;
     margin: 0;
   }
@@ -878,10 +884,16 @@ section {
   .hydropick-title {
     padding-top: 3rem;
     padding-bottom:2rem;
+    font-size: clamp(6rem, 12vw, 3rem);
   }
 
   .hydropick-subheader {
+    font-size: clamp(1rem, 5vw, 1.5rem);
     padding-top: 3rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   .about-textura p,
@@ -902,7 +914,9 @@ section {
     padding: 1rem;
   }
 
-  .product-card {
+
+
+  /* .product-card {
     position: absolute;
     bottom: 30px;
     left: 12.61px;
@@ -916,7 +930,7 @@ section {
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     text-align: center;
     aspect-ratio: 1 / 1;
-  }
+  } */
 
   .card-stack-row,
   .action-text-row,
@@ -953,8 +967,9 @@ section {
   }
   .action-stack {
     flex-direction: row !important;
-    flex-wrap: nowrap;
-    gap: clamp(5px, 4vw, 10px);
+    flex-wrap: wrap !important;
+    gap: clamp(1px, 0.2vw, 10px);
+    justify-content: center;
   }
 
   .action-label {
