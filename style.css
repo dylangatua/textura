@@ -650,9 +650,9 @@ section {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
+  overflow: visible;
+  text-overflow: unset;
+  display: block;
   width: 380px;
   padding: 4px 23px 36px 2px;
 }
@@ -1036,7 +1036,7 @@ section {
   }
 
    .all-description-box b {
-    font-size: clamp(10px, 50% ,19.544px);
+    font-size: clamp(14px, 80% ,19.544px);
    }
 
 
